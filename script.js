@@ -1,28 +1,18 @@
-// var firstName = prompt("What is your first name?");
 
-// alert ("...and if you don't mind...;");
+var todos = [];
 
-// var lastName = prompt("What is your last name?");
-
-// var age = prompt("What is your age");
-
-// var days = age * 365;
-
-// console.log ('Hello ' + firstName + " " + lastName + '.') 
-
-// console.log ("I see you're " + age + " which is" + days + " so you can go right in.")
-
-var friends = ['josh','chris','ryan','dustin'];
+var input = prompt("What would you like to do?");
 
 
 
-friends.push("Nicole");
-
-
-function change() {
-    document.getElementById("h1").innerHTML=friends[4];
+while (input !== "quit") {
+if (input === "list") {
+    console.log(todos);
+}   else if (input === "new") {
+    var newTodo = prompt("Enter new todo");
+    todos.push(newTodo);
 }
-
-var sample = friends.slice(1,3);
-
-console.log(sample);
+//ask for new input
+ input = prompt("What would you like to do?");
+}
+console.log("Ok, you quit the app.")
