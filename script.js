@@ -1,5 +1,5 @@
 
-var todos = [];
+var todos = ['buy new turtle'];
 
 var input = prompt("What would you like to do?");
 
